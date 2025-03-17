@@ -1,69 +1,31 @@
-# Welcome to your Lovable project
+# DevTools Hub 🚀  
 
-## Project info
+A **modern, sleek, and responsive** developer productivity hub that provides essential tools in one place, including JSON generation, SVG to JSX conversion, color gradient generation, and more.  
 
-**URL**: https://lovable.dev/projects/ade81a74-8784-4370-8213-5e4b62786790
+## 🌟 Features  
+- **Fake JSON Generator** – Customize schema details to generate fake JSON data.  
+- **SVG to JSX Converter** – Instantly convert SVG code into JSX format.  
+- **Color Gradient Generator** – Create and preview smooth CSS gradients.  
+- **Cron Job Generator** – Easily generate cron expressions for scheduling tasks.  
+- **JWT Decoder** – Decode and verify JSON Web Tokens.  
+- **Regex Tester** – Write, test, and validate regular expressions.  
+- **Base64 Encoder/Decoder** – Convert text and images to/from Base64 format.  
+- **Text Case Converter** – Change text between uppercase, lowercase, camelCase, etc.  
 
-## How can I edit this code?
+## 🎨 UI & UX  
+- **Modern, sleek, and developer-friendly UI**  
+- **Light & Dark mode for better accessibility**  
+- **Fully responsive** for desktop, tablet, and mobile devices  
+- **Seamless navigation between tools** without returning to the homepage  
 
-There are several ways of editing your application.
+## 🛠 Tech Stack  
+- **Frontend:** React.js (Next.js optional)  
+- **Styling:** Tailwind CSS  
+- **State Management:** React Context / Redux (if needed)  
+- **Routing:** React Router (for seamless tool navigation)  
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/ade81a74-8784-4370-8213-5e4b62786790) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ade81a74-8784-4370-8213-5e4b62786790) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🚀 Installation & Setup  
+1. Clone the repository:  
+   ```sh
+   git clone https://github.com/yourusername/devtools-hub.git
+   cd devtools-hub
