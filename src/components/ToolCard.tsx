@@ -2,6 +2,7 @@
 import { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface ToolCardProps {
   title: string;
@@ -14,8 +15,8 @@ interface ToolCardProps {
 
 export default function ToolCard({ title, description, icon, href, className, available = false }: ToolCardProps) {
   return (
-    <a 
-      href={available ? href : "#"} 
+    <Link 
+      to={available ? href : "#"} 
       className={cn(
         "glass-card h-full group flex flex-col rounded-xl p-6 relative overflow-hidden",
         !available && "opacity-85 cursor-not-allowed",
@@ -50,6 +51,6 @@ export default function ToolCard({ title, description, icon, href, className, av
           "Coming Soon"
         )}
       </div>
-    </a>
+    </Link>
   );
 }
