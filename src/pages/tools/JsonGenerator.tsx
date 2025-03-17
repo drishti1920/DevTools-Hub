@@ -3,9 +3,8 @@ import { useState, useEffect } from "react";
 import { Copy, Download, Plus, Trash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
+import {  Form, FormItem, FormLabel } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
@@ -121,6 +120,7 @@ export default function JsonGenerator() {
   };
 
   return (
+    <Form {...form}>
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="space-y-6">
         <div className="flex justify-between items-center">
@@ -270,5 +270,6 @@ export default function JsonGenerator() {
         </div>
       </div>
     </div>
+    </Form>
   );
 }

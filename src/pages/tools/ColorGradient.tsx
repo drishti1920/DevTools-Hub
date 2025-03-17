@@ -7,6 +7,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { toast } from "sonner";
+import { useForm } from "react-hook-form";
 
 type GradientType = "linear" | "radial";
 type Direction = "to right" | "to left" | "to top" | "to bottom" | "to top right" | "to top left" | "to bottom right" | "to bottom left" | "45deg" | "90deg" | "135deg" | "180deg" | "225deg" | "270deg" | "315deg" | "0deg";
@@ -27,6 +28,7 @@ export default function ColorGradient() {
   
   const [cssCode, setCssCode] = useState<string>("");
   const [gradientPreview, setGradientPreview] = useState<string>("");
+  const form = useForm();
   
   useEffect(() => {
     updateGradient();
@@ -134,6 +136,7 @@ export default function ColorGradient() {
   };
 
   return (
+    <Form {...form}>
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="space-y-6">
         <div className="flex justify-between items-center">
@@ -296,5 +299,6 @@ export default function ColorGradient() {
         </Tabs>
       </div>
     </div>
+    </Form>
   );
 }
