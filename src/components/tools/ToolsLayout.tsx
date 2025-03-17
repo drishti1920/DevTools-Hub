@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Outlet, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { FileJson, Code, PaintBucket, Slash, ArrowLeft } from "lucide-react";
+import { FileJson, Code, PaintBucket, Slash, ArrowLeft, Home } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -61,16 +61,17 @@ export default function ToolsLayout() {
   return (
     <div className="container py-8 md:py-12">
       <div className="flex justify-between items-center mb-8">
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           <Button 
-            variant="ghost" 
+            variant="outline" 
             size="sm" 
-            className="mr-4"
             onClick={() => navigate('/')}
+            className="flex items-center gap-1"
           >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back Home
+            <Home className="h-4 w-4" />
+            <span className="hidden sm:inline">Home</span>
           </Button>
+          
           <h1 className="text-2xl font-bold">Developer Tools</h1>
         </div>
       </div>
